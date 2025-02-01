@@ -34,12 +34,13 @@ p {
 	font-size: 1.5rem;
 	text-align: justify;
 }
-a {
+#navbar a {
 	color: var(--violet);
-	text-decoration: none;
 	transition: text-shadow 0.3s ease, font-size 0.5s ease, font-weight 0.5s ease;
 }
-
+a {
+	text-decoration: none;
+}
 
 #navbar a:hover {
 	text-shadow: var(--green) 1px 0 5px !important;
@@ -48,15 +49,15 @@ a {
 }
 
 a:active {
-	color: var(--light-blue) !important;
+	color: white;
 }
 
 a:visited {
-	color: var(--blue);
+	color: white;
 }
 
 a:link {
-	color: var(--violet);
+	color: white;
 }
 
 #logo {
@@ -785,6 +786,7 @@ footer p {
 		margin: 0;
 		padding: 0;
 		transition: all 0.3s ease-in-out;
+		z-index: 1000;
 	}
 
 	header.vertical {
@@ -884,6 +886,10 @@ footer p {
 		display: none;
 	  }
 	
+	  #navbar-mobile.active {
+		z-index: 1;
+	  }
+
 	  #navbar-mobile.active ul {
 		display: flex;
 	  }
