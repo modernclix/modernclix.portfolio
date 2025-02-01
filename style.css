@@ -60,6 +60,10 @@ a:link {
 	color: white;
 }
 
+#welcome-links a {
+	color: var(--violet);
+}
+
 #logo {
 	display: flex;
 	flex-direction: row;
@@ -189,7 +193,6 @@ header.vertical #logo img {
 
 header.vertical #logo-text {
 	margin-left: 0;
-	text-align: start;
 	transition: all 0.6s ease-in-out;
 }
 
@@ -210,7 +213,6 @@ header.vertical nav {
 header.vertical #navbar ul {
 	flex-direction: column;
 	align-items: center;
-	transition-delay: 0.2s;
 	transition: all 0.6s ease-in-out;
 }
 
@@ -221,7 +223,6 @@ header.vertical #navbar li {
 
 header.scrolled #logo-text {
 	margin-left: 0;
-	text-align: start;
 	transition: all 0.6s ease-in-out;
 }
 
@@ -969,8 +970,9 @@ footer p {
 	}
 
 	#welcome-links a:link {
-		color: var(--violet);
+		color: white;
 	}
+
 
 	#welcome-links i {
 		opacity: 1;
